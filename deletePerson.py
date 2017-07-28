@@ -2,16 +2,16 @@
 #Authors: Nancy Xiao & Ayumi Mizuno
 import httplib, urllib, base64
 
-KEY = '564a789479fe4d99ab424c3e9174b0e7'
+KEY = '' #Enter subscription key here
 headers = {
     # Request headers
     'Ocp-Apim-Subscription-Key': KEY,
 }
 
 params = urllib.urlencode({
-'personGroupId':'su-ilab',
+'personGroupId':'',
 #Enter the person ID here, can get it from "diretory.txt"
-'personId': "e26815bb-762c-4005-8857-a4b88fd1f3b4",
+'personId': "",
 })
 
 try:
