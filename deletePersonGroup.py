@@ -2,7 +2,7 @@
 # Authors: Nancy Xiao & Ayumi Mizuno
 import httplib, urllib, base64
 
-KEY = '564a789479fe4d99ab424c3e9174b0e7'
+KEY = '' #Enter subscription key here
 headers = {
     # Request headers
     'Ocp-Apim-Subscription-Key': KEY,
@@ -10,7 +10,7 @@ headers = {
 
 params = urllib.urlencode({
     #Enter person group ID here
-    "personGroupId" : "su-ilab"
+    "personGroupId" : ""
 })
 
 try:
