@@ -11,7 +11,7 @@ from webcam import *
 from watson_developer_cloud import TextToSpeechV1,SpeechToTextV1
 
 # Enter a valid subscription key (keeping the quotes in place).
-KEY = '564a789479fe4d99ab424c3e9174b0e7'
+KEY = '' #Enter subscription key here
 
 #detect face
 params = urllib.urlencode({
@@ -131,8 +131,8 @@ try:
 except IndexError:
     speech = "Cannot detect face, try again."
     text_to_speech = TextToSpeechV1(
-        username='4e3ee5b6-c092-4b88-9d9a-f3a5a7f64fae',
-        password='KCK7QlqWC7eU',
+        username='', #Enter username here
+        password='',
         x_watson_learning_opt_out=True)
     with open(join(dirname(__file__), './output2.mp3'),
               'wb') as audio_file:
@@ -140,7 +140,7 @@ except IndexError:
         text_to_speech.synthesize(speech, accept='audio/wav',
                                       voice="en-US_MichaelVoice"))
         
-    os.startfile('C:/Users/Admin/Desktop/spinachEgg/output2.mp3')
+    os.startfile('C:/Users/Admin/Desktop/spinachEgg/output2.mp3') # path may needed to be changed
     sys.exit(0)
 
 if response.status_code != 200:
@@ -192,8 +192,8 @@ print('\n')
 
 # Personalized greeting based on IBM watson API
 text_to_speech = TextToSpeechV1(
-    username='4e3ee5b6-c092-4b88-9d9a-f3a5a7f64fae',
-    password='KCK7QlqWC7eU',
+    username='', #Enter username here
+    password='',
     x_watson_learning_opt_out=True)  # Optional flag
 
 
@@ -318,7 +318,8 @@ else:
     #Control the lock by using Lockitron API            
     url = "https://api.lockitron.com/v2/locks/2096c5b1-f2ec-49a3-875f-a879b3410b26"
 
-    access_token = '7f63bb7a55a4586c11e5c7521ec6753768e6a27406715cedb11bdec0219ab359'
+    access_token = '' #Enter token here
+
 
     data = {
             'access_token': access_token,
