@@ -12,8 +12,8 @@ from watson_developer_cloud import TextToSpeechV1,SpeechToTextV1
 # greeting
 text_to_speech = TextToSpeechV1(
     # Enter username and password here
-    username='4e3ee5b6-c092-4b88-9d9a-f3a5a7f64fae',
-    password='KCK7QlqWC7eU',
+    username='',
+    password='',
     x_watson_learning_opt_out=True)  # Optional flag
 speech = "Face recognized,   what language do you prefer?   English, German, French or Japanese.    Or say skip"
 
@@ -69,8 +69,8 @@ wf.close()
 
 #speech to text
 speech_to_text = SpeechToTextV1(
-    username="e26a9ab9-34fd-46c7-9e15-a63f0ee5f83f",
-    password="DgUn4zvvlBa1",
+    username="",
+    password="",
     x_watson_learning_opt_out=False
 )
 
