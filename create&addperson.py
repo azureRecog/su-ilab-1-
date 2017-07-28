@@ -9,7 +9,7 @@ headers = {
     'Ocp-Apim-Subscription-Key': KEY,
 }
 params = urllib.urlencode({
-    'personGroupId':'su-ilab'
+    'personGroupId':''
 })
 
 #create person
