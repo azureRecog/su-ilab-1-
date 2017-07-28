@@ -4,7 +4,7 @@
 import cognitive_face as CF
 import httplib, urllib, base64
 
-KEY = '564a789479fe4d99ab424c3e9174b0e7'
+KEY = ''
 
 CF.Key.set(KEY)
 
@@ -19,7 +19,7 @@ headers = {
 }
 
 params = urllib.urlencode({
-    'personGroupId':'su-ilab'
+    'personGroupId':''
 })
 
 try:
@@ -35,7 +35,7 @@ except Exception as e:
 #get training status
 params = urllib.urlencode({
     #Enter person group id here
-    'personGroupId':'su-ilab'
+    'personGroupId':''
 })
 
 try:
