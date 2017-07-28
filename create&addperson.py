@@ -3,7 +3,7 @@
 #Authors: Nancy Xiao & Ayumi Mizuno
 import httplib, urllib, base64
 
-KEY = '564a789479fe4d99ab424c3e9174b0e7'
+KEY = '' #Enter subscription key here
 headers = {
     'Content-Type': 'application/json',
     'Ocp-Apim-Subscription-Key': KEY,
@@ -13,7 +13,7 @@ params = urllib.urlencode({
 })
 
 #create person
-name = 'elisee-sare' # please enter name in this format (i.e. vincent-david), because this name will be automatically reformatted and written into "directory.txt"
+name = '' # please enter name in this format (i.e. vincent-david), because this name will be automatically reformatted and written into "directory.txt"
 tempDict = {'name': name}
 body = str(tempDict)
 
@@ -53,7 +53,7 @@ params = urllib.urlencode({
 
 #enter image url here (we've tried to use local images, but to no avail.
 #One way that we converted local images into url format is to upload it to a github account, get the url, and take down the image)
-body = "{'url':'https://user-images.githubusercontent.com/29762876/28697556-99ce3c72-72f1-11e7-9485-18b9ee45ff6e.jpg'}"
+body = "{'url':''}"
 
 try:
     conn = httplib.HTTPSConnection('westus.api.cognitive.microsoft.com')
