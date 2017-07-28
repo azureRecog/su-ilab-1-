@@ -5,7 +5,7 @@ import cognitive_face as CF
 import httplib, urllib, base64
 
 # Enter a valid subscription key (keeping the quotes in place).
-KEY = '564a789479fe4d99ab424c3e9174b0e7'
+KEY = '' 
 
 CF.Key.set(KEY)
 
@@ -22,10 +22,10 @@ headers = {
 # Enter an ID you haven't used for creating a group before.
 # The valid characters for the ID include numbers, English letters in lower case, '-' and '_'. 
 # The maximum length of the ID is 64.
-personGroupId = 'su-ilab'
+personGroupId = ''
 
 # The userData field is optional. The size limit for it is 16KB.
-body = "{ 'name':'su-ilab'}"
+body = "{ 'name':''}"
 
 try:
     # NOTE: You must use the same region in your REST call as you used to obtain your subscription keys.
